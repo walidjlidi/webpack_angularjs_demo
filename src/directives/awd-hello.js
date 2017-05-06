@@ -3,7 +3,7 @@ module.exports = function(ngModule){
        return {
            restrict: 'E',
            scope: {},
-           templateUrl: 'src/directives/awd-hello.html',
+           template: require('./awd-hello.html'),
            controllerAs: 'vm',
            controller: function(){
                var vm = this;

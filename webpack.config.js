@@ -12,5 +12,11 @@ module.exports = {
                 context : __dirname
             }
         })
-    ]
+    ],
+    module: {
+        loaders: [
+            {test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/},
+            {test: /\.html$/, loader: 'raw-loader', exclude: /node_modules/}
+        ]
+    }
 }
