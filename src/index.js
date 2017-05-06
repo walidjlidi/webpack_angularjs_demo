@@ -1,5 +1,5 @@
-var angular = require('angular');
+const angular = require('angular');
 
-var ngModule = angular.module('app', []);
+const ngModule = angular.module('app', []);
 
 require('./directives')(ngModule);
