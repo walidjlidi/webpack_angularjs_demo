@@ -1,5 +1,6 @@
 module.exports = function(ngModule){
     ngModule.directive('awdHello', function(){
+       require ('./awd-hello.css')
        return {
            restrict: 'E',
            scope: {},
