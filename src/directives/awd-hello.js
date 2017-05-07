@@ -1,4 +1,7 @@
 module.exports = function(ngModule){
+    if (ON_TEST) {
+        require('./awd-hello.test').default(ngModule);
+    }
     ngModule.directive('awdHello', function(){
        require ('./awd-hello.css')
        return {
